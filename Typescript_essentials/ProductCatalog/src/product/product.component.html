@@ -1,0 +1,10 @@
+<div class="main-container">
+    <div class="sub-container" *ngFor="let p of product">
+        <input type="text" [value]="p.id">
+        <input type="text" [value]="p.name">
+        <input type="text" [value]="p.price">
+
+         <input type="text" [value]="p.inStock ? 'in the stock' : 'out of the stock'" readonly>
+        <button (click)="checkStatus(p)">check the status</button>
+    </div>
+</div>
