@@ -114,3 +114,250 @@ Here:
 *   Display user details in the template.
 
 ***
+### ✅ **Purpose in Angular Projects**
+
+*   **Interfaces** and **type aliases** help define the shape of objects, making your code predictable and easier to maintain.
+*   They are heavily used for:
+    *   API response models
+    *   Component input/output types
+    *   Service data contracts
+
+***
+
+### ✅ **Interface**
+
+*   Defines the structure of an object.
+*   Can be extended by other interfaces.
+*   Commonly used for models in Angular.
+
+**Syntax:**
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+```
+
+**Real-Time Example in Angular:**
+In a **User Management App**, you might have:
+
+```typescript
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+const user: User = {
+  id: 1,
+  name: 'Shushanth',
+  email: 'shushanth@example.com'
+};
+```
+
+***
+
+### ✅ **Type Alias**
+
+*   Can define a type for primitives, unions, tuples, or objects.
+*   More flexible than interfaces.
+
+**Syntax:**
+
+```typescript
+type Status = 'active' | 'inactive' | 'pending';
+type UserID = number;
+```
+
+**Real-Time Example:**
+For an **Order System**:
+
+```typescript
+type OrderStatus = 'pending' | 'shipped' | 'delivered';
+
+interface Order {
+  id: number;
+  status: OrderStatus;
+}
+```
+
+***
+
+### ✅ **Difference Between Interface and Type Alias**
+
+*   **Interface** → Best for object shapes and can be extended.
+*   **Type Alias** → Best for unions, primitives, and complex types.
+
+***
+
+Got it! Here are the **definitions and one simple example for each**:
+
+***
+
+### ✅ **Functions**
+
+**Definition:**  
+A function is a block of code that performs a specific task and can be reused.
+
+**Example:**
+
+```typescript
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+console.log(add(5, 3)); // Output: 8
+```
+
+***
+
+### ✅ **Classes**
+
+**Definition:**  
+A class is a blueprint for creating objects with properties and methods.
+
+**Example:**
+
+```typescript
+class Person {
+  constructor(public name: string) {}
+
+  greet(): string {
+    return `Hello, ${this.name}`;
+  }
+}
+
+const p = new Person('Shushanth');
+console.log(p.greet()); // Output: Hello, Shushanth
+```
+
+***
+
+### ✅ **Modules**
+
+**Definition:**  
+A module is a file that can export variables, functions, or classes and import them into other files.
+
+**Example:**
+`math.ts`
+
+```typescript
+export function add(a: number, b: number): number {
+  return a + b;
+}
+```
+
+`main.ts`
+
+```typescript
+import { add } from './math';
+console.log(add(2, 3)); // Output: 5
+```
+
+***
+
+### ✅ **Imports & Exports**
+
+**Definition:**  
+Imports and exports allow sharing code between files.
+
+**Example:**
+
+```typescript
+// utils.ts
+export const PI = 3.14;
+
+// main.ts
+import { PI } from './utils';
+console.log(PI); // Output: 3.14
+```
+
+***
+
+
+Got it! Here are the **definitions and one simple example for each**:
+
+***
+
+### ✅ **Functions**
+
+**Definition:**  
+A function is a block of code that performs a specific task and can be reused.
+
+**Example:**
+
+```typescript
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+console.log(add(5, 3)); // Output: 8
+```
+
+***
+
+### ✅ **Classes**
+
+**Definition:**  
+A class is a blueprint for creating objects with properties and methods.
+
+**Example:**
+
+```typescript
+class Person {
+  constructor(public name: string) {}
+
+  greet(): string {
+    return `Hello, ${this.name}`;
+  }
+}
+
+const p = new Person('Shushanth');
+console.log(p.greet()); // Output: Hello, Shushanth
+```
+
+***
+
+### ✅ **Modules**
+
+**Definition:**  
+A module is a file that can export variables, functions, or classes and import them into other files.
+
+**Example:**
+`math.ts`
+
+```typescript
+export function add(a: number, b: number): number {
+  return a + b;
+}
+```
+
+`main.ts`
+
+```typescript
+import { add } from './math';
+console.log(add(2, 3)); // Output: 5
+```
+
+***
+
+### ✅ **Imports & Exports**
+
+**Definition:**  
+Imports and exports allow sharing code between files.
+
+**Example:**
+
+```typescript
+// utils.ts
+export const PI = 3.14;
+
+// main.ts
+import { PI } from './utils';
+console.log(PI); // Output: 3.14
+```
+ASDNKJAKJABKJABDSKJABDDKJ
+***
+
